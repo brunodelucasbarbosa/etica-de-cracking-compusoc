@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main_container {
+  min-height: 80vh;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_retangle {
+  min-height: 20vh;
+  background-color: blue;
+  width: 90%;
+  display: flex;
+}
+
+.left_section{
+  min-height: 10vh;
+  background-color: #7987F2;
+  width: 45%;
+}
+
+.right_section{
+  min-height: 10vh;
+  background-color: yellow;
+  width: 55%;
+}
+
+.white{
+  color: white;
+}
+
+.align_center{
+  text-align: center;
+}
