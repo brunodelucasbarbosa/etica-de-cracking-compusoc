@@ -1,0 +1,19 @@
+{
+  "name": "etica-de-cracking-compusoc",
+  "version": "1.0.0",
+  "description": "(Projeto de site para a matéria MATA68)",
+  "main": "index.html",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunobarbosa17/etica-de-cracking-compusoc.git"
+  },
+  "author": "Bruno de Lucas, Elis Marcela, Lorena Roberta, Larissa Maiara, Jamilson Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunobarbosa17/etica-de-cracking-compusoc/issues"
+  },
+  "homepage": "https://github.com/brunobarbosa17/etica-de-cracking-compusoc#readme"
+}
