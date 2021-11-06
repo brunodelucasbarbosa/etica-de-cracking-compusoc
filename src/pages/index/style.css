@@ -109,6 +109,7 @@ form {
   border-radius: 10px;
   height: 35px;
   width: 280px;
+  padding: 1rem;
 }
 
 .inputs-quadrante {
