@@ -14,5 +14,5 @@ botaoEnviar.addEventListener('click', (e) => {
   }
 
   console.log(pessoa);
-  window.location.href = 'http://127.0.0.1:5500/src/pages/login/login.html'
+  window.location.href = 'http://127.0.0.1:5500/src/pages/logado/index.html'
 })
