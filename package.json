@@ -2,7 +2,7 @@
   "name": "etica-de-cracking-compusoc",
   "version": "1.0.0",
   "description": "(Projeto de site para a matéria MATA68)",
-  "main": "index.html",
+  "main": "./src/pages/index/index.html",
   "scripts": {
     "test": "start"
   },
