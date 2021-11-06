@@ -13,6 +13,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 40%;
 }
 
 .title-site {
@@ -64,4 +65,80 @@ article {
 .container-interno-direita {
   margin-top: 0.3rem;
   background-color: white;
+  width: 60%;
+}
+
+/**/
+
+.informacoes-internas-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-interno-direita {
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding: 6rem 6rem 0 6rem;
+}
+
+.span-safespace {
+  color: var(--roxo-medio);
+}
+
+.linha-roxa {
+  width: 40%;
+  height: 5px;
+  background-color: var(--roxo-forte);
+  margin-top: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 5.2rem;
+  font-size: 1.4rem;
+}
+
+.input-dados {
+  border: none;
+  border: 2px solid var(--roxo-medio);
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 35px;
+  width: 280px;
+}
+
+.inputs-quadrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.input-checkbox {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3.8rem;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.botao-enviar {
+  cursor: pointer;
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--roxo-medio);
+  text-align: center;
 }

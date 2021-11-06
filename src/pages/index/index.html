@@ -49,16 +49,56 @@
       
       <aside class="container-interno-direita">
         <div class="title-container-interno-direita">
-          <h2>Registre-se agora no <span class="span-safespace">SAFESPACE</span></h2>
-        </div>
 
-        <form>
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-        </form>
+          <div class="informacoes-internas-direita">
+            <h2 class="title-interno-direita roboto">Registre-se agora no <br><span class="span-safespace">SAFESPACE</span></h2>
+            <div class="linha-roxa"></div>
+          </div>
+
+          <form>
+            <div class="input-nome">
+              <label for="nome">
+                Nome completo
+              </label>
+              <input type="text" id="nome" name="nome" style="display: block;" class="input-dados" required>
+            </div>
+            
+            <div class="inputs-quadrante">
+              <div class="inputs-quadrante-interno-1">
+                <label>
+                  CEP
+                  <input type="number" class="input-dados" required>
+                </label>
+                <label>
+                  Email
+                  <input type="email" class="input-dados" required>
+                </label>
+              </div>
+              <div class="inputs-quadrante-interno-2">
+                <label>
+                  Senha
+                  <input type="text" class="input-dados" required>
+                </label>
+                <label>
+                  Confirme sua senha
+                  <input type="text" class="input-dados" required>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-checkbox">
+              <input id="aceitar" type="checkbox" name="aceitar" required>
+              <label for="aceitar">
+                Aceita nossos termos de uso?
+              </label>
+            </div>
+
+            <div class="botao-enviar">
+              <button class="roboto white">FAZER LOGIN</button>
+            </div>
+          </form>
+
+        </div>
       </aside>
 
     </article>
