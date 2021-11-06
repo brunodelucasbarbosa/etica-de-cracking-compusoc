@@ -18,6 +18,7 @@ article {
 .title-site {
   font-size: 7.2rem;
   margin-top: 2.7rem;
+  margin-bottom: 4.4rem;
 }
 
 .icone-safe {
@@ -27,21 +28,27 @@ article {
 .containers-infos {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+.imagem-safe {
+  background-color: var(--cinza);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
 }
 
 .container-info {
   display: flex;
   margin-bottom: 8rem;
-  width: 40%;
+  width: 70%;
 }
 
 .informacoes-internas {
-  margin-left: 0.6rem;
+  margin-left: 1rem;
+  width: 60%;
 }
 
 .title-interno {
