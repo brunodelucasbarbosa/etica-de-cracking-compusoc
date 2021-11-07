@@ -1,7 +1,7 @@
 const botaoEnviar = document.querySelector('.button-enviar');
 const containerDireita = document.querySelector('.container-interno-direita');
 const containerEsquerda = document.querySelector('.container-interno-esquerda');
-const pessoa = {}
+const pessoa = {};
 let botaoIrPerfil;
 let botaoComoProteger;
 let botaoTomarCuidado;
@@ -37,7 +37,7 @@ botaoEnviar.addEventListener('click', () => {
           <h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados">
             <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           `
     containerDireita.innerHTML = `
