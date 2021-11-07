@@ -199,7 +199,7 @@ button {
   font-size: 3.5rem;
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1400px) {
   article {
     display: flex;
     flex-direction: column;
