@@ -67,6 +67,10 @@ article {
   margin-top: 0.3rem;
   background-color: white;
   width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
 }
 
 /**/
@@ -80,7 +84,7 @@ article {
 .title-interno-direita {
   font-size: 3.6rem;
   font-weight: bold;
-  padding: 6rem 6rem 0 6rem;
+  margin-bottom: 2rem;
 }
 
 .span-safespace {
@@ -135,6 +139,7 @@ button {
 }
 
 .botao-enviar {
+  margin-bottom: 2.5rem;
   cursor: pointer;
   width: 50%;
   padding: 1rem;
@@ -149,14 +154,18 @@ button {
 }
 
 .span-interno-direita-logado {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 8rem 0 8rem 8rem;
 }
 
+.aviso {
+  margin: 0 0 2rem 0;
+  font-size: 2.7rem;
+}
+
 .span-interno-direita-perfil {
   font-size: 3.2rem;
-  font-weight: bold;
 }
 
 .infos-pessoais {
@@ -223,5 +232,9 @@ button {
 
   .container-info-cuidados {
     align-items: center;
+  }
+
+  html {
+    font-size: 58%;
   }
 }

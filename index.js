@@ -21,14 +21,12 @@ botaoEnviar.addEventListener('click', () => {
   pessoa.email = email.value;
   containerEsquerda.innerHTML = '';
   containerDireita.innerHTML = `
-  <aside class="container-interno-direita">
               <h2 class="title-interno-direita roboto">Bem-vindxs ao <span class="span-safespace">SAFESPACE</span></h2>        
               <span class="span-interno-direita-logado roboto">Prezamos por uma navegação segura e dados bem guardados!</span>
 
               <div class="botao-enviar">
                 <button class="button-enviar ir-para-perfil roboto white">IR PARA MEU PERFIL</button>
               </div>
-</aside>
   `
   window.scrollTo(0, 0);
   botaoIrPerfil = document.querySelector('.button-enviar.ir-para-perfil');
@@ -45,7 +43,7 @@ botaoEnviar.addEventListener('click', () => {
           <h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados">
             <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           `
     containerDireita.innerHTML = `
@@ -72,7 +70,7 @@ botaoEnviar.addEventListener('click', () => {
     </aside>`;
       containerDireita.innerHTML = `<h2 class="title-interno-direita roboto">Como se proteger?</h2>
       <div class="container-info-cuidados">
-        <iframe width="350" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="botao-enviar tomar-cuidado">
         <button class="button-enviar roboto white">IREI TOMAR CUIDADO!</button>
