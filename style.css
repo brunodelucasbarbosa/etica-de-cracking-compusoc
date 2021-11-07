@@ -17,7 +17,8 @@ article {
 }
 
 .title-site {
-  font-size: 7.2rem;
+  font-size: 7rem;
+  padding: 2rem;
   margin-top: 2.7rem;
   margin-bottom: 4.4rem;
 }
@@ -179,7 +180,7 @@ button {
 .span-interno-final {
   font-weight: bold;
   font-size: 3.6rem;
-  width: 50%;
+  padding: 3rem;
 }
 
 .creditos {

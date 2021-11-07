@@ -39,11 +39,12 @@ botaoEnviar.addEventListener('click', () => {
       document.location.reload(true);
       return window.alert("Não foi possível consultar o CEP, tente novamente!")
     }
+    window.scrollTo(0,0);
     containerEsquerda.innerHTML = `
           <h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados">
             <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           `
     containerDireita.innerHTML = `
@@ -64,6 +65,7 @@ botaoEnviar.addEventListener('click', () => {
           `
     botaoComoProteger = document.querySelector('.button-enviar.ir-para-perfil');
     botaoComoProteger.addEventListener('click', () => {
+      window.scrollTo(0,0);
       containerEsquerda.innerHTML = `<aside class="container-interno-esquerda" style="width: 40vw;">
       <h2 class="title-site roboto white">SAFESPACE</h2>
     </aside>`;
@@ -76,6 +78,7 @@ botaoEnviar.addEventListener('click', () => {
       </div>`;
       botaoTomarCuidado = document.querySelector('.botao-enviar.tomar-cuidado');
       botaoTomarCuidado.addEventListener('click', () => {
+        window.scrollTo(0,0);
         containerEsquerda.innerHTML = `<h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados creditos">
             <span class="span-interno-final roboto">
