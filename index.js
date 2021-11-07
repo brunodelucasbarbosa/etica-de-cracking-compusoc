@@ -19,7 +19,7 @@ botaoEnviar.addEventListener('click', () => {
   pessoa.cep = cep.value;
   pessoa.senha = senha.value;
   pessoa.email = email.value;
-
+  containerEsquerda.innerHTML = '';
   containerDireita.innerHTML = `
   <aside class="container-interno-direita">
               <h2 class="title-interno-direita roboto">Bem-vindxs ao <span class="span-safespace">SAFESPACE</span></h2>        
@@ -30,6 +30,7 @@ botaoEnviar.addEventListener('click', () => {
               </div>
 </aside>
   `
+  window.scrollTo(0, 0);
   botaoIrPerfil = document.querySelector('.button-enviar.ir-para-perfil');
 
   botaoIrPerfil.addEventListener('click', async () => {
@@ -39,7 +40,7 @@ botaoEnviar.addEventListener('click', () => {
       document.location.reload(true);
       return window.alert("Não foi possível consultar o CEP, tente novamente!")
     }
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     containerEsquerda.innerHTML = `
           <h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados">
@@ -65,20 +66,20 @@ botaoEnviar.addEventListener('click', () => {
           `
     botaoComoProteger = document.querySelector('.button-enviar.ir-para-perfil');
     botaoComoProteger.addEventListener('click', () => {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
       containerEsquerda.innerHTML = `<aside class="container-interno-esquerda" style="width: 40vw;">
       <h2 class="title-site roboto white">SAFESPACE</h2>
     </aside>`;
       containerDireita.innerHTML = `<h2 class="title-interno-direita roboto">Como se proteger?</h2>
       <div class="container-info-cuidados">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="350" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="botao-enviar tomar-cuidado">
         <button class="button-enviar roboto white">IREI TOMAR CUIDADO!</button>
       </div>`;
       botaoTomarCuidado = document.querySelector('.botao-enviar.tomar-cuidado');
       botaoTomarCuidado.addEventListener('click', () => {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         containerEsquerda.innerHTML = `<h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados creditos">
             <span class="span-interno-final roboto">

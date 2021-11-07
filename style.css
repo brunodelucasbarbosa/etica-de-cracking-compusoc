@@ -193,6 +193,20 @@ button {
 }
 
 @media (max-width: 1400px) {
+  main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .containers-infos {
+    padding: 1.5rem;
+  }
+  .container-info {
+    width: 100%;
+  }
+  .title-site {
+    font-size: 5rem;
+  }
+
   article {
     display: flex;
     flex-direction: column;
@@ -203,7 +217,11 @@ button {
   }
 
   .container-interno-direita {
-    width: 100%;
-    padding: 4rem;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .container-info-cuidados {
+    align-items: center;
   }
 }
