@@ -9,10 +9,10 @@ let botaoTomarCuidado;
 botaoEnviar.addEventListener('click', () => {
   const nome = document.querySelector('#nome');
   const cep = document.querySelector('.input-dados.cep');
-  if(cep.value.length !== 8) {return window.alert("Digite um CEP Válido!")}
+  if (cep.value.length !== 8) { return window.alert("Digite um CEP Válido!") }
   const senha = document.querySelector('.input-dados.senha');
   const email = document.querySelector('.input-dados.email');
-  if(!nome.value || !cep.value || !senha.value || !email.value) {
+  if (!nome.value || !cep.value || !senha.value || !email.value) {
     return window.alert("Todos os campos são necessários!");
   }
   pessoa.nome = nome.value;
@@ -34,6 +34,11 @@ botaoEnviar.addEventListener('click', () => {
 
   botaoIrPerfil.addEventListener('click', async () => {
     const data = await consultarCep(pessoa.cep);
+    console.log(data)
+    if (data.erro) {
+      document.location.reload(true);
+      return window.alert("Não foi possível consultar o CEP, tente novamente!")
+    }
     containerEsquerda.innerHTML = `
           <h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados">
@@ -70,8 +75,8 @@ botaoEnviar.addEventListener('click', () => {
         <button class="button-enviar roboto white">IREI TOMAR CUIDADO!</button>
       </div>`;
       botaoTomarCuidado = document.querySelector('.botao-enviar.tomar-cuidado');
-        botaoTomarCuidado.addEventListener('click', () => {
-          containerEsquerda.innerHTML = `<h2 class="title-site roboto white">SAFESPACE</h2>
+      botaoTomarCuidado.addEventListener('click', () => {
+        containerEsquerda.innerHTML = `<h2 class="title-site roboto white">SAFESPACE</h2>
           <div class="container-info-cuidados creditos">
             <span class="span-interno-final roboto">
               Projeto desenvolvido para a matéria MATA68 - Computador Ética e Sociedade.
@@ -79,7 +84,7 @@ botaoEnviar.addEventListener('click', () => {
               Anna Friedericka Schwarzelmüller & Débora Abdalla
             </span>
           </div>`;
-          containerDireita.innerHTML = ` <h2 class="title-interno-direita roboto">Estudantes</h2>
+        containerDireita.innerHTML = ` <h2 class="title-interno-direita roboto">Estudantes</h2>
           <div class="container-info-cuidados creditos">
             <span class="nomes-alunos roboto">Bruno de Lucas Barbosa</span>
             <span class="nomes-alunos roboto">Elis Marcela</span>
@@ -87,7 +92,7 @@ botaoEnviar.addEventListener('click', () => {
             <span class="nomes-alunos roboto">Larissa Maiara</span>
             <span class="nomes-alunos roboto">Lorena Roberta</span>
           </div>`;
-        })
+      })
     })
 
 

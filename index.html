@@ -62,31 +62,24 @@
           </div>
 
           <form>
-            <div class="input-nome">
               <label for="nome">
                 Nome completo
               </label>
-              <input type="text" id="nome" name="nome" style="display: block;" class="input-dados" required>
-            </div>
+              <input type="text" id="nome" name="nome" class="input-dados" placeholder="James Earl Jones" required>
 
-            <div class="inputs-quadrante">
-              <div class="inputs-quadrante-interno-1">
-                <label>
+                <label for="cep">
                   CEP
-                  <input type="number" class="input-dados cep" required="required">
                 </label>
-                <label>
+                <input type="number" id="cep" name="cep" class="input-dados cep" placeholder="Ex: 01001000" required>
+                
+                <label for="email">
                   Email
-                  <input type="email" class="input-dados email" required>
                 </label>
-              </div>
-              <div class="inputs-quadrante-interno-2">
-                <label>
+                <input type="email" id="email" class="input-dados email" placeholder="digite@seuemail.com" required>
+                <label for="senha">
                   Senha
-                  <input type="text" class="input-dados senha" required>
                 </label>
-              </div>
-            </div>
+                <input type="password" id="senha" class="input-dados senha" placeholder="Senha" required>
 
             <div class="input-checkbox">
               <input id="aceitar" type="checkbox" name="aceitar" required>

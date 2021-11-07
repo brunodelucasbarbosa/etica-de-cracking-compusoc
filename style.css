@@ -97,7 +97,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1rem;
   margin-top: 5.2rem;
   font-size: 1.4rem;
 }
@@ -115,14 +115,6 @@ label {
   height: 35px;
   width: 280px;
   padding: 1rem;
-}
-
-.inputs-quadrante {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.4rem;
 }
 
 .input-checkbox {
