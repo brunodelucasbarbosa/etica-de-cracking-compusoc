@@ -102,6 +102,11 @@ form {
   font-size: 1.4rem;
 }
 
+label {
+  font-family: Roboto;
+  font-size: 1.4rem;
+}
+
 .input-dados {
   border: none;
   border: 2px solid var(--roxo-medio);

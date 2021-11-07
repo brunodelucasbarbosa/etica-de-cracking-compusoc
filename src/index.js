@@ -6,12 +6,14 @@ let botaoIrPerfil;
 let botaoComoProteger;
 let botaoTomarCuidado;
 
-botaoEnviar.addEventListener('click', (e) => {
-  e.preventDefault();
+botaoEnviar.addEventListener('click', () => {
   const nome = document.querySelector('#nome');
   const cep = document.querySelector('.input-dados.cep');
   const senha = document.querySelector('.input-dados.senha');
   const email = document.querySelector('.input-dados.email');
+  if(!nome.value || !cep.value || !senha.value || !email.value) {
+    return window.alert("Todos os campos são necessários!");
+  }
   pessoa.nome = nome.value;
   pessoa.cep = cep.value;
   pessoa.senha = senha.value;
