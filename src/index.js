@@ -4,6 +4,7 @@ const containerEsquerda = document.querySelector('.container-interno-esquerda');
 const pessoa = {}
 let botaoIrPerfil;
 let botaoComoProteger;
+let botaoTomarCuidado;
 
 botaoEnviar.addEventListener('click', (e) => {
   e.preventDefault();
@@ -54,9 +55,21 @@ botaoEnviar.addEventListener('click', (e) => {
                   </div>
           `
     botaoComoProteger = document.querySelector('.button-enviar.ir-para-perfil');
-    console.log(botaoComoProteger);
     botaoComoProteger.addEventListener('click', () => {
-      console.log('teste')
+      containerEsquerda.innerHTML = `<aside class="container-interno-esquerda" style="width: 40vw;">
+      <h2 class="title-site roboto white">SAFESPACE</h2>
+    </aside>`;
+      containerDireita.innerHTML = `<h2 class="title-interno-direita roboto">Como se proteger?</h2>
+      <div class="container-info-cuidados">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="botao-enviar tomar-cuidado">
+        <button class="button-enviar roboto white">IREI TOMAR CUIDADO!</button>
+      </div>`;
+      botaoTomarCuidado = document.querySelector('.botao-enviar.tomar-cuidado');
+        botaoTomarCuidado.addEventListener('click', () => {
+          console.log('final');
+        })
     })
 
 

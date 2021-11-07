@@ -174,3 +174,23 @@ button {
   flex-direction: column;
   margin-bottom: 8rem;
 }
+
+.tomar-cuidado {
+  margin-bottom: 5rem;
+}
+
+.span-interno-final {
+  font-weight: bold;
+  font-size: 3.6rem;
+  width: 50%;
+}
+
+.creditos {
+  margin-top: 3rem;
+}
+
+.nomes-alunos {
+
+  font-weight: bold;
+  font-size: 3.5rem;
+}
