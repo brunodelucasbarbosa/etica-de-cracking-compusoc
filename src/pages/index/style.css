@@ -190,7 +190,22 @@ button {
 }
 
 .nomes-alunos {
-
   font-weight: bold;
   font-size: 3.5rem;
+}
+
+@media (max-width: 1049px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-interno-esquerda {
+    width: auto;
+  }
+
+  .container-interno-direita {
+    width: 100%;
+    padding: 4rem;
+  }
 }

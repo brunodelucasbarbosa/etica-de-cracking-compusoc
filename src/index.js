@@ -68,17 +68,29 @@ botaoEnviar.addEventListener('click', (e) => {
       </div>`;
       botaoTomarCuidado = document.querySelector('.botao-enviar.tomar-cuidado');
         botaoTomarCuidado.addEventListener('click', () => {
-          console.log('final');
+          containerEsquerda.innerHTML = `<h2 class="title-site roboto white">SAFESPACE</h2>
+          <div class="container-info-cuidados creditos">
+            <span class="span-interno-final roboto">
+              Projeto desenvolvido para a matéria MATA68 - Computador Ética e Sociedade.
+              Ministrado pelas professoras:
+              Anna Friedericka Schwarzelmüller & Débora Abdalla
+            </span>
+          </div>`;
+          containerDireita.innerHTML = ` <h2 class="title-interno-direita roboto">Estudantes</h2>
+          <div class="container-info-cuidados creditos">
+            <span class="nomes-alunos roboto">Bruno de Lucas Barbosa</span>
+            <span class="nomes-alunos roboto">Elis Marcela</span>
+            <span class="nomes-alunos roboto">Jamilson Júnior</span>
+            <span class="nomes-alunos roboto">Larissa Maiara</span>
+            <span class="nomes-alunos roboto">Lorena Roberta</span>
+          </div>`;
         })
     })
 
 
   })
 })
-botaoComoProteger.addEventListener('click', () => {
-  console.log('teste')
-}
-)
+
 
 
 async function consultarCep(cep) {
