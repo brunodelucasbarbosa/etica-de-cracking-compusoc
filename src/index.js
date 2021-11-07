@@ -1,9 +1,9 @@
 const botaoEnviar = document.querySelector('.button-enviar');
 const containerDireita = document.querySelector('.container-interno-direita');
 const containerEsquerda = document.querySelector('.container-interno-esquerda');
-console.log(containerEsquerda)
 const pessoa = {}
 let botaoIrPerfil;
+let botaoComoProteger;
 
 botaoEnviar.addEventListener('click', (e) => {
   e.preventDefault();
@@ -27,31 +27,49 @@ botaoEnviar.addEventListener('click', (e) => {
 </aside>
   `
   botaoIrPerfil = document.querySelector('.button-enviar.ir-para-perfil');
-  botaoIrPerfil.addEventListener('click', () => {
-    const promise = fetch(`https://viacep.com.br/ws/${pessoa.cep}/json/`).then(
-      (response) => {
-        const promiseBody = response.json();
-        promiseBody.then(data => {
-          containerDireita.innerHTML = `
-          <h2 class="title-interno-direita roboto">Bem-vindxs,<span class="span-safespace"> ${pessoa.nome}</span>!</h2>
+
+  botaoIrPerfil.addEventListener('click', async () => {
+    const data = await consultarCep(pessoa.cep);
+    containerEsquerda.innerHTML = `
+          <h2 class="title-site roboto white">SAFESPACE</h2>
+          <div class="container-info-cuidados">
+            <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          `
+    containerDireita.innerHTML = `
+          <h2 class="title-interno-direita roboto">Bem-vindxs,<span class="span-safespace"> ${ pessoa.nome }</span>!</h2>
                   <div class="infos-pessoais">
-                    <span class="span-interno-direita-perfil roboto">Você mora no Estado: <span class="span-safespace">${data.uf}</span></span>
-                    <span class="span-interno-direita-perfil roboto">Você mora na cidade: <span class="span-safespace">${data.localidade}</span></span>
-                    <span class="span-interno-direita-perfil roboto">Você mora no bairro: <span class="span-safespace">${data.bairro}</span></span>
-                    <span class="span-interno-direita-perfil roboto">Você mora na rua: <span class="span-safespace">${data.logradouro}</span></span>
-                    <span class="span-interno-direita-perfil roboto">E a sua senha é: <span class="span-safespace">${pessoa.senha}</span></span>
+                    <span class="span-interno-direita-perfil roboto">Você mora no Estado: <span class="span-safespace">${ data.uf }</span></span>
+                    <span class="span-interno-direita-perfil roboto">Você mora na cidade: <span class="span-safespace">${ data.localidade }</span></span>
+                    <span class="span-interno-direita-perfil roboto">Você mora no bairro: <span class="span-safespace">${ data.bairro }</span></span>
+                    <span class="span-interno-direita-perfil roboto">Você mora na rua: <span class="span-safespace">${ data.logradouro }</span></span>
+                    <span class="span-interno-direita-perfil roboto">E a sua senha é: <span class="span-safespace">${ pessoa.senha }</span></span>
                   </div>   
                   <div class="temos-dados">
                     <span class="span-interno-direita-logado aviso roboto">Temos acesso a todos os seus dados e você nem percebeu!</span>
                   </div>
                   <div class="botao-enviar">
-                    <button class="button-enviar ir-para-perfil roboto white">IR PARA MEU PERFIL</button>
+                    <button class="button-enviar ir-para-perfil roboto white">COMO ME PROTEGER?</button>
                   </div>
           `
-        })
-      }
-    )
-   
+    botaoComoProteger = document.querySelector('.button-enviar.ir-para-perfil');
+    console.log(botaoComoProteger);
+    botaoComoProteger.addEventListener('click', () => {
+      console.log('teste')
+    })
+
+
   })
 })
+botaoComoProteger.addEventListener('click', () => {
+  console.log('teste')
+}
+)
 
+
+async function consultarCep(cep) {
+  const promise = await fetch(`https://viacep.com.br/ws/${ cep }/json/`);
+  const response = await promise.json();
+  return response;
+}
