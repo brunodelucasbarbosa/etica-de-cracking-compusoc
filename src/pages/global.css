@@ -38,3 +38,7 @@ main {
 .bold {
   font-weight: bold;
 }
+
+.span-safespace {
+  color: var(--roxo-medio);
+}

@@ -143,3 +143,28 @@ button {
   background-color: var(--roxo-medio);
   text-align: center;
 }
+
+.container-interno-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.span-interno-direita-logado {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 8rem 0 8rem 8rem;
+}
+
+.span-interno-direita-perfil {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.infos-pessoais {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
