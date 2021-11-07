@@ -9,6 +9,7 @@ let botaoTomarCuidado;
 botaoEnviar.addEventListener('click', () => {
   const nome = document.querySelector('#nome');
   const cep = document.querySelector('.input-dados.cep');
+  if(cep.value.length !== 8) {return window.alert("Digite um CEP Válido!")}
   const senha = document.querySelector('.input-dados.senha');
   const email = document.querySelector('.input-dados.email');
   if(!nome.value || !cep.value || !senha.value || !email.value) {
