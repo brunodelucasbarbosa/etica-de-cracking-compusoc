@@ -193,7 +193,10 @@ button {
 }
 
 .creditos {
+  display: flex;
+  flex-direction: column;
   margin-top: 3rem;
+  gap: 2rem;
 }
 
 .nomes-alunos {
@@ -201,7 +204,16 @@ button {
   font-size: 3.5rem;
 }
 
+.icons-creditos {
+  display: flex;
+  gap: 1rem;
+}
+
 @media (max-width: 1400px) {
+  html {
+    font-size: 58%;
+  }
+  
   main {
     width: 100vw;
     overflow-x: hidden;
@@ -234,7 +246,5 @@ button {
     align-items: center;
   }
 
-  html {
-    font-size: 58%;
-  }
+
 }
