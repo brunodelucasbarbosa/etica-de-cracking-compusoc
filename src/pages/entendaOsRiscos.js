@@ -1,9 +1,10 @@
+// TO DO - COLOCAR O VIDEO DA LARISSA
 export function entendaOsRiscosEsquerda() {
     const esquerda = `
   <h2 class="title-site roboto white">SAFESPACE</h2>
   <div class="container-info-cuidados">
     <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
-    <iframe width="300" height="315" src="https://www.youtube.com/embed/FFKnAoGCaNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXxxNDrRssk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>`;
     return esquerda;
 }
