@@ -5,5 +5,5 @@ export function bemVindo() {
   <div class="botao-enviar">
     <button class="button-enviar ir-para-perfil roboto white">IR PARA MEU PERFIL</button>
   </div>`;
-  return bemVindo
+  return bemVindo;
 }
