@@ -74,6 +74,11 @@ export function creditosDireita() {
     <img src="https://img.icons8.com/color/50/000000/instagram-new--v2.png" />
   </a>
 </div>
+
+<a href="https://github.com/brunobarbosa17/etica-de-cracking-compusoc" target="_blank">
+<span class="nomes-alunos roboto">Ir para o repositório do projeto</span>
+</a>
+
 </div>`;
 return direita;
 }
