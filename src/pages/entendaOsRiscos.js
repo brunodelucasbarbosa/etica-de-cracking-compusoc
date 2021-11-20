@@ -1,6 +1,4 @@
-
 export function entendaOsRiscosEsquerda() {
-<<<<<<< HEAD
   const esquerda = `
     <h2 class="title-site roboto white">SAFESPACE</h2>
     <div class="container-info-cuidados">
@@ -8,15 +6,6 @@ export function entendaOsRiscosEsquerda() {
       <iframe width="300" height="300" src="https://www.youtube.com/embed/m2Ls6Hk8t2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>`;
   return esquerda;
-=======
-    const esquerda = `
-  <h2 class="title-site roboto white">SAFESPACE</h2>
-  <div class="container-info-cuidados">
-    <h2 class="title-interno-direita roboto">Entenda os Riscos!</h2>
-    <iframe width="300" height="315" src="https://www.youtube.com/embed/FFKnAoGCaNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>`;
-    return esquerda;
->>>>>>> 8e01decc4103edcb97bc0a7ee07f9765f45c649e
 }
 
 export function entendaOsRiscosDireita(pessoa, data) {
