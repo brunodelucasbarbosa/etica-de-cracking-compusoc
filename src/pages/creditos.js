@@ -14,7 +14,7 @@ export function creditosDireita() {
   const direita = `<h2 class="title-interno-direita roboto">Estudantes</h2>
   <div class="icons-creditos">
   <span class="nomes-alunos roboto">Bruno de Lucas Barbosa</span>
-  <a href="https://github.com/brunobarbosa17" target="_blank">
+  <a href="https://github.com/brunodelucasbarbosa" target="_blank">
     <img src="https://img.icons8.com/color/48/000000/github--v3.png" />
   </a>
 
